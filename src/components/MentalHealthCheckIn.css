@@ -1,0 +1,360 @@
+.mental-health {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+  border-radius: 15px;
+  color: white;
+  margin: 30px 0;
+}
+
+.mh-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mh-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.mh-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Mood Check-in */
+.mood-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.mood-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mood-button {
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mood-button:hover {
+  transform: scale(1.1);
+  border-color: #667eea;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.mood-button.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-color: #667eea;
+  transform: scale(1.15);
+}
+
+.mood-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mood-description {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Self-care Recommendations */
+.selfcare-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.selfcare-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.selfcare-recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.recommendation-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.recommendation-card.exercise {
+  border-left-color: #10b981;
+}
+
+.recommendation-card.mindfulness {
+  border-left-color: #f59e0b;
+}
+
+.recommendation-card.social {
+  border-left-color: #ec4899;
+}
+
+.recommendation-card.rest {
+  border-left-color: #3b82f6;
+}
+
+.recommendation-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.recommendation-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.recommendation-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Alert Section */
+.alert-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  color: #333;
+}
+
+.alert-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.alert-status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.status-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 3px solid #10b981;
+}
+
+.status-card.warning {
+  border-top-color: #f59e0b;
+}
+
+.status-card.alert {
+  border-top-color: #ef4444;
+}
+
+.status-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.status-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #10b981;
+}
+
+.status-card.warning .status-value {
+  color: #f59e0b;
+}
+
+.status-card.alert .status-value {
+  color: #ef4444;
+}
+
+/* Check-in History */
+.history-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  color: #333;
+}
+
+.history-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.history-mood {
+  font-size: 2rem;
+}
+
+.history-content {
+  flex: 1;
+}
+
+.history-date {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.history-note {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Buttons */
+.mh-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.mh-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.mh-btn.secondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid #e0e0e0;
+}
+
+.mh-btn.secondary:hover {
+  border-color: #667eea;
+  background: white;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Graph/Chart Simulation */
+.mood-chart {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 200px;
+}
+
+.chart-bar {
+  flex: 1;
+  background: linear-gradient(180deg, #667eea, #764ba2);
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.chart-bar:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.chart-bar.day-1 { height: 40%; }
+.chart-bar.day-2 { height: 60%; }
+.chart-bar.day-3 { height: 50%; }
+.chart-bar.day-4 { height: 70%; }
+.chart-bar.day-5 { height: 80%; }
+.chart-bar.day-6 { height: 75%; }
+.chart-bar.day-7 { height: 85%; }
+
+@media (max-width: 768px) {
+  .mh-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .mood-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .selfcare-recommendations {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .mh-btn {
+    width: 100%;
+  }
+}
